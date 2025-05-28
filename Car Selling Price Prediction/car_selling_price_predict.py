@@ -38,7 +38,7 @@ rf.score(x_test,y_test)*100 , rf.score(x_train,y_train)*100
 
 
 # user input prediction
-new_data = pd.DataFrame([["ertiga",2015,7.71,26000,"Petrol","Dealer","Manual",0]],columns=x_train.columns)
+new_data = pd.DataFrame([["dzire",2014,8.06,45780,'Diesel','Dealer','Manual',0]],columns=x_train.columns)
 
 new_data["Car_Name"] = car_name_le.transform(new_data["Car_Name"])
 new_data["Fuel_Type"] = fuel_type_le.transform(new_data["Fuel_Type"])
